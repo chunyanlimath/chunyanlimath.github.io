@@ -1,45 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en-US'>
+
 <head>
-<title>Chunyan Li's Website</title>
-<meta charset="UTF-8">
+<title>CSS Template</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
 </style>
 </head>
-<body style="background-color:Lightgray;">
-​
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://chunyanlimath.github.io/index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="https://chunyanlimath.github.io/research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
-    <a href="https://chunyanlimath.github.io/pub.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Publications</a>
-	<a href='https://chunyanlimath.github.io/talks.html' class='w3-bar-item w3-button w3-padding-large w3-hide-small'>Talks</a>
-    <a href="https://chunyanlimath.github.io/teach.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teaching</a>
-	<a href='https://chunyanlimath.github.io/Awards.html' class='w3-bar-item w3-button w3-padding-large w3-hide-small'>Awards</a>
-	<a href='https://chunyanlimath.github.io/note.html' class='w3-bar-item w3-button w3-padding-large w3-hide-small'>Notes</a>
-  </div>
-</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+
+
+<body>
+
+<!--  <h1>My first heading </h1>  -->
+
+<!--  <p style='color:red;'>My first paragraph.</p>  -->
+<!-- <p title='I'm a tooltip'> This is a paragraph </p>   -->
+<header>
+Chunyan Li's Website 
+</header>
+
+
+
+<!--  <p>This is a <br> paragraph with a line break. </p> -->
+
+<!--  <a href='http://www.w3schools.com'> This is a link </a> -->
+
+
+
+<section>
+	<nav>
+		<ul>
+			<li><a href='#'> Homepage </a></li>
+			<li><a href="https://chunyanlimath.github.io/research.html">Research</a></li>
+			<li><a href="https://chunyanlimath.github.io/pub.html">Publications</a></li>
+			<li><a href='https://chunyanlimath.github.io/talks.html'>Talks</a></li>
+			<li><a href="https://chunyanlimath.github.io/teach.html">Teaching</a></li>
+			<li><a href='https://chunyanlimath.github.io/Awards.html'>Awards</a> </li>
+			<li><a href='https://chunyanlimath.github.io/note.html'>Notes</a></li>
+		</ul>
+	</nav>
+	
+			 
+	
+	
+	<article>
 		<!-- page content -->
 		<h3>Chunyan Li (李春妍)</h3>
+		<img src='/images/chunyan.jpg' alt='chunyan' width='104' height='142'>
+ 
 			<p>I am currently a Ph.D candidate in the <a href='https://sc.edu/study/colleges_schools/artsandsciences/mathematics/index.php'>Department of Mathematics</a>, 
 			<a href='https://sc.edu/'>University of South Carolina</a>. 
 			My supervioser is <a href='https://people.math.sc.edu/wangq/'>Prof.Qi Wang</a>. </p>
 			<ul>
 				<li>email: chunyan@email.sc.edu</li>
-				<li>office: LC313A/SUM103</li>
+				<li>office: LeCnote 314/SUM103 <br> Mathematics Department <br> University of South Carolina <br> 
+				Columbia, SC, USA</li>
 			</ul>
 			<h4>Education</h4>
 			<ul>
@@ -48,15 +126,13 @@ body {font-family: "Lato", sans-serif}
 				<li> B.S. in Mathematics, <a href='https://math.xtu.edu.cn/'>School of Mathematics and Computational Science</a>, 
 				<a href='https://www.xtu.edu.cn/'>Xiangtan University</a>, Xiangtan, Hunan, P.R. China, 09/2014-06/2018  </li>
 			</ul>
-			<h4><a href="/notes/CV_chunyan.pdf" >CV</a></h4>
-			<h4><a href="https://chunyanlimath.github.io/research.html">Research</a></h4>
-			<h4><a href="https://chunyanlimath.github.io/pub.html">Publications</a> </h4>
-			<h4><a href='https://chunyanlimath.github.io/talks.html'>Talks</a></h4>
-			<h4><a href="https://chunyanlimath.github.io/teach.html">Teaching</a></h4>
-			<h4><a href='https://chunyanlimath.github.io/Awards.html'>Awards</a> </h4>
-			<h4><a href='https://chunyanlimath.github.io/note.html'>Notes</a></h4>
-			
-			<footer>last update: 4/30/2022 </footer>
-​</body>
+	</article>
+</section>
+
+<footer> 
+	<p>Footer </p>
+</foooter>
+
+</body>
 </html>
- 
+
