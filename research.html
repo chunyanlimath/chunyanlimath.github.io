@@ -107,35 +107,119 @@ Chunyan Li's Website
 	
 	
 	<article>
-		<!-- page content -->
-		<h2> Research </h2>
-		<h4>Research Interests </h4>
-		I pursue interdisciplinary research at the interface of mathematics, physics, chemistry, biology, medicine, and the life sciences. 
-		My work integrates data science, machine learning, and mathematical modeling with classical numerical analysis. 
-		By combining theoretical rigor with computational innovation, I aim to develop high-performance algorithms and 
-		analytical frameworks that address real-world scientific challenges—ultimately advancing the connection between scientific computing and human health.
-		
-		My primary research interest is 
-		<ul>
-			<li>Data-driven modeling and computation, which combines machine learning with partial differential equations and dynamical systems 
-		to solve interdisciplinary problems such as the design of a digital twin for health. 
-	</li>
-			<li> Develop physics-informed learning to discover and solve partial differential equations as well as 
-		structure-preserving deep learning methods during this process. 
-		</li>
-			<li> Design high-order energy stable numerical schemes for partial differential equations, especially the ones coupled with dynamical boundary conditions which are natural in many small scaled systems.
-			</li>
+  <h2>Research</h2>
 
-		<h4>Community Activities</h4>
-			<ul>
-				<li>I co-organized the <a href='https://sc.edu/study/colleges_schools/artsandsciences/mathematics/beyond_classroom/colloquia_and_seminars/acm_student_seminar/index.php'>
-				ACM Student Seminar</a> 
-				at the Department of Mathematics at the University of South Carolina, 2021-2023
-				<br>
-				Please contact us if you'd like to give a talk!</li>
-				<li>Vice president at SIAM student chapter of UofSC, 09/2020-09/2022 </li>
-				<li>Proctor for the annual USC High School Math contest, 2019 - 2020 </li>
-			</ul>
+  <p>
+    I work at the intersection of applied mathematics, scientific machine learning,
+    and biomedical modeling. My research develops <b>structure-aware methods for
+    predictive digital twins</b>: models that combine mechanistic knowledge,
+    data-driven learning, and reliable computation to infer individualized dynamics
+    from sparse data and support scientific prediction and decision-making.
+  </p>
+
+  <p>
+    Across applications, I integrate partial differential equations, graph-based
+    dynamical systems, physical laws such as energy dissipation and conservation,
+    numerical analysis, and uncertainty-aware inference. My long-term goal is to
+    develop efficient, trustworthy, and interpretable digital twins for health.
+  </p>
+
+  <h3>Research Directions</h3>
+
+  <h4>Personalized dynamical inference for health</h4>
+  <p>
+    I develop hybrid mechanistic-data-driven models that infer patient-specific
+    dynamics from limited and heterogeneous observations. My work includes a
+    personalized graph-PDE framework for Alzheimer's disease progression using
+    longitudinal MRI, PET, fMRI, and cognitive data. The model combines nonlinear
+    biomarker interactions with patient-specific brain-network diffusion to predict
+    future disease trajectories and identify biologically meaningful mechanisms.
+  </p>
+
+  <p>
+    I am also extending this direction to noninvasive cardiovascular monitoring,
+    developing physiologically informed methods to reconstruct arterial blood pressure
+    waveforms from ECG signals and recent beat history.
+  </p>
+
+  <h4>Reliable neural solvers for nonlinear PDEs</h4>
+  <p>
+    I develop structure-aware neural-network methods for stiff and multiscale PDEs,
+    with phase-field models as a primary testbed. I introduced Energy Dissipation
+    Rate-guided Adaptive Sampling (EDRAS) for physics-informed neural networks,
+    using thermodynamic structure to allocate computational effort where the system is
+    actively evolving.
+  </p>
+
+  <p>
+    I also study random projection neural networks (RPNNs) for Allen-Cahn and
+    Cahn-Hilliard equations. By combining randomized features, nonlinear least-squares
+    optimization, adaptive sampling, and domain decomposition, these methods accurately
+    resolve sharp interfaces while providing a more transparent optimization framework
+    than fully trainable deep networks.
+  </p>
+
+  <h4>Inverse problems and data assimilation for digital twins</h4>
+  <p>
+    I use unsaturated groundwater flow as a testbed for PDE-constrained inverse
+    problems. My current work develops methods to infer spatially heterogeneous soil
+    properties from noisy observations while respecting the nonlinear Richards equation.
+    These tools provide a foundation for calibrating and updating future digital twins,
+    including patient-specific models with parameters inferred from sparse longitudinal data.
+  </p>
+
+  <h3>Future Goals</h3>
+  <p>
+    My future research will advance hybrid digital twins for health through
+    uncertainty-aware inference, structure-constrained discovery of unknown mechanisms,
+    and fast operator-learning surrogates. In parallel, I will develop scalable
+    randomized and structure-preserving neural solvers for multiscale PDEs. Together,
+    these directions aim to connect rigorous applied mathematics with consequential
+    problems in health, medicine, and scientific computing.
+  </p>
+
+  <h3>Community Activities</h3>
+<ul>
+  <li>
+    <b>Mini-Symposium Lead Organizer</b> (with Zengyan Zhang and Xiaofeng Xu),
+    <a href="https://www.siam.org/conferences-events/siam-conferences/cse27/" target="_blank">
+      SIAM Conference on Computational Science and Engineering (CSE27)
+    </a>,
+    Pittsburgh, Pennsylvania, U.S., February 22-26, 2027.
+    <br>
+    Mini-symposium topic: <i>Scientific Machine Learning Methods and High-Performance
+    Computing for Complex PDEs and Applications</i> (2 sessions, 8 talks).
+  </li>
+
+  <li>
+    <b>Mini-Symposium Lead Organizer</b> (with Zengyan Zhang and Yanfang Liu),
+    <a href="https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=89688" target="_blank">
+      SIAM Conference on Mathematics of Data Science (MDS26)
+    </a>,
+    Salt Lake City, Utah, U.S., November 16-20, 2026.
+  </li>
+
+  <li>
+    I co-organized the
+    <a href="https://sc.edu/study/colleges_schools/artsandsciences/mathematics/beyond_classroom/colloquia_and_seminars/acm_student_seminar/index.php" target="_blank">
+      ACM Student Seminar
+    </a>
+    at the Department of Mathematics at the University of South Carolina, 2021-2023.
+    <br>
+  </li>
+
+  <li>
+    Vice President, SIAM Student Chapter at the University of South Carolina
+    September 2020-September 2022.
+  </li>
+
+  <li>
+    Proctor, annual USC High School Math Contest, 2019-2020.
+  </li>
+</ul>
+</article>
+
+		 
 			
 	
 			
